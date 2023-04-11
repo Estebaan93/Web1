@@ -9,10 +9,33 @@
         <p>Vamos a crear un formulario:</p>
         <!--Atributo action que recibe al enviar, se va al servidor-->
         <form action="/enviar-respuesta"> 
-            <label><input id="interior" type="radio">Interior</label><!--Permite seleccionar desde el texto-->
-            <label><input id="exterior" type="radio">Exterior</label>
+            <!--Los atributos checked marcan opciones por defectos, se agrega a input-->
+            <label for="interior">
+                <input id="interior" type="radio" value="Interior" name="interior-exterior" checked>Interior
+            </label>
+            <br>
+            <!--Permite seleccionar desde el texto--> <!--Salto de linea-->
+            <!--Atributo value indica al servidor el valor asignado, corre para ambos-->
+            <label for="exterior">
+                <input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior
+            </label>
+            <br>
+            
+            <!--Casillas de verificacion-->
+            <label for="opc1">
+                <input id="opc1" type="checkbox" value="opc1" checked>Opc1
+            </label>
+            <br>
+            <label for="opc2">
+                <input id="opc2"type="checkbox" value="opc2">Opc2
+            </label>
+            <br>
+            
             <!-- Formulario de ingreso de texto para el usuario-->
+            <!--Texto y boton enviar-->
             <input type="text" placeholder="Subir imagen" required> <!--Requerido--> 
+            <br>
+
             <button type="submit">Enviar</button>
         </form>
     </main>
