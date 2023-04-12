@@ -3,29 +3,40 @@
 <head>
     <title>LISTAS</title>
     <meta charset="urt-8"></meta> 
+    <!-- Estilo en hoja, dentro de style asignaremos a cada elemento-->
+    <style>
+         h4 {
+          color: brown;
+         }       
+    </style>
 </head>
 <body>
   <main>
-    <h3>LISTAS</h3>
-    <p>Listas <strong>no</strong> ordenadas:</p>
-    <ul>
-        <li>Lista dos</li>
-        <li>Lista uno</li>
-        <li>Lista tres</li>
-    </ul>
-    <p>Listas <em>ordenadas</em>:</p>
-    <ol>
-        <li>Lista uno</li>
-        <li>Lista dos</li>
-        <li>Lista tres</li>
-    </ol>
+    <div> <!-- Inicio del contenedor div, para aplicar funciones con css-->
+       <h3 style="color: rgb(116, 116, 201) ">LISTAS</h3> <!--css en linea-->
+        <h4>Listas <strong>no</strong> ordenadas:</h4>
+        <ul>
+          <li>Lista dos</li>
+          <li>Lista uno</li>
+          <li>Lista tres</li>
+        </ul>
+       <h4>Listas <em>ordenadas</em>:</h4>
+        <ol>
+         <li>Lista uno</li>
+         <li>Lista dos</li>
+         <li>Lista tres</li>
+        </ol>
+    </div>
     <hr>    <!--Etiqueta de linea horizontal-->
     <p>GNU/Linux (pronunciado oficialmente como <s>njuː ˈlɪnəks</s> o también «ge-ene-u Linux» en español),
     1​ es un sistema operativo (o una familia de sistemas operativos) tipo Unix compuesto por 
     software libre y de código abierto.2​ GNU/Linux surge de las contribuciones de varios proyectos 
     de software, entre los cuales destacan GNU (iniciado por Richard Stallman en 1983) y el kernel 
     «Linux» (iniciado por Linus Torvalds en 1991).3​</p>
-
+   
   </main>
+  <footer>  <!-- Pie de pagina, con etiqueta small-->
+    <p id="piePagina"><small> Sin derechos de autor- mundoDeportivo.com</small></p>
+  </footer>
 </body>
 </html>
