@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        7) Cree un archivo html que muestre una frase al azar cada vez que se cargue. Las frases
+deberán estar en otro archivo independiente, del tipo .js
+    </h4>
+    <h4>
+        FRASES AL AZAR:
+    </h4>
+    <p id="frase"></p>
+    <script src="js.js"></script>
+    <script>
+        function mostrarFrase(){
+            let indice=Math.floor(Math.random()* frases.length);
+            let fraseElem=document.getElementById("frase");
+            fraseElem.textContent=frases[indice];
+        }
+
+        //Llama a la funcion cada vez que se carga la pagina
+        window.onload=mostrarFrase;
+    </script>
+</body>
+</html>
