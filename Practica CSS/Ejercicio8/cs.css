@@ -1,0 +1,11 @@
+body{
+    background-image: url("../../Practica HTML/src/pexels-nati-17788287.jpg");
+    background-size: 40%;
+}
+header{
+    color: white;
+}
+ul{
+    list-style-image: url("../../Practica HTML/src/beagle.png") ;
+
+}

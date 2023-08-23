@@ -4,10 +4,13 @@ Además, el párrafo tiene el texto justificado y un interlineado grueso. Tambi�
 título un tipo de letra arial y le cambiaremos el tamaño*/
 h1{
     color: red;
+    font-family: Arial, Helvetica, sans-serif;
 }
-p{
-    line height: normal;
-    text-align: justify;
+article p{
     color: orange;
+    text-align: justify;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
