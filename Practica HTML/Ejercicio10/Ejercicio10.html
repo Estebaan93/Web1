@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercio 10</title>
+    <title>Ejercicio 10</title>
     <style>
         body{
             background-image: url("../src/pexels-alina-chernii-17927562.jpg");
@@ -16,16 +16,15 @@
             border: 1px solid #228686;
             font-family: Arial, Helvetica, sans-serif;
             font-size: medium;
-            margin-right: 20px;
+            margin-right: 90px;
         } 
         main{
             display: flex;
         }
-        #tabla4, #tabla5, #tabla6{
-            margin: 0px;
-            border: 0px;
-            padding: 0px;
-            
+        #tabla4, tr, td{
+            border: 1px solid #228686;
+            border-collapse: collapse;
+            height: 10px;
         }
 
     </style>
@@ -91,32 +90,25 @@
             </tr>
         </table>
 
-        <div style="display: flex;">
         <table id="tabla4">
-          <tr>
-            <td>AAAA</td>
-          </tr>
-          <tr>
-            <td>BBBB</td>
-          </tr>
+            <tr>
+                <td rowspan="3">AAA</td>
+                <td rowspan="6">CCC</td>
+                <td rowspan="2">DDD</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="2">EEE</td>
+            </tr>
+            <tr>
+                <td rowspan="3">BBB</td>
+            </tr>
+            <tr>
+                <td rowspan="2">FFF</td>
+            </tr>
+            <tr></tr>
+
         </table>
-        <table id="tabla5">
-            <tr>
-                <td>CCCC</td>
-            </tr>
-        </table>
-        <table id="tabla6">
-            <tr>
-                <td>DDDD</td>
-            </tr>
-            <tr>
-                <td>EEEE</td>
-            </tr>
-            <tr>
-                <td>FFFF</td>
-            </tr>
-        </table>
-    </div>
 
     </main>
 

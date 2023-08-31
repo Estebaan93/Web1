@@ -2,6 +2,11 @@
 En concreto, presentar el texto en color rojo para el título, y naranja para el párrafo.
 Además, el párrafo tiene el texto justificado y un interlineado grueso. También, le daremos al
 título un tipo de letra arial y le cambiaremos el tamaño*/
+
+body{
+    background-image: url("../../Practica HTML/src/pexels-viktoriia-kondratiuk-17573843.jpg");
+    background-size: 50%;
+}
 h1{
     color: red;
     font-family: Arial, Helvetica, sans-serif;

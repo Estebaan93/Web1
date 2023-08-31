@@ -2,6 +2,10 @@
 - Color de encabezado h1 azul
 - Color de encabezado h2 verde
 - Tipo de letra de los párrafos p Arial Black*/
+body{
+    background-image: url("../../Practica HTML/src/pexels-jovan-vasiljević-17907904.jpg");
+    background-size: auto;
+}
 h1 {
     color: blue;
 }

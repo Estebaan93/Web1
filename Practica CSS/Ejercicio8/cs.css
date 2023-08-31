@@ -3,9 +3,12 @@ body{
     background-size: 40%;
 }
 header{
-    color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
 }
 ul{
-    list-style-image: url("../../Practica HTML/src/beagle.png") ;
+    list-style-image: url("../../Practica HTML/src/beagle.gif") ;
+  
 
 }

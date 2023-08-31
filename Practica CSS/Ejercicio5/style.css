@@ -1,7 +1,12 @@
 /*Definir una CSS donde establezca que el tipo de letra es Verdana y tamaño 8 en los
 párrafos. Definir dos páginas que utilicen esa hoja de estilo de las cuales una debe redefinir
 el tamaño de letra a 10*/
-div p {
+body{
+    background-image: url("../../Practica HTML/src/pexels-lorete-m-17651791.jpg");
+    background-size: 50%;
+    color: white;
+}
+p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 8px;
 }
