@@ -4,7 +4,7 @@ Además, el párrafo tiene el texto justificado y un interlineado grueso. Tambi�
 título un tipo de letra arial y le cambiaremos el tamaño*/
 
 body{
-    background-image: url("../../Practica HTML/src/pexels-viktoriia-kondratiuk-17573843.jpg");
+    background-image: url("../../../Practica HTML/src/pexels-viktoriia-kondratiuk-17573843.jpg");
     background-size: 50%;
 }
 h1{

@@ -2,7 +2,7 @@
 párrafos. Definir dos páginas que utilicen esa hoja de estilo de las cuales una debe redefinir
 el tamaño de letra a 10*/
 body{
-    background-image: url("../../Practica HTML/src/pexels-lorete-m-17651791.jpg");
+    background-image: url("../../../Practica HTML/src/pexels-lorete-m-17651791.jpg");
     background-size: 50%;
     color: white;
 }
