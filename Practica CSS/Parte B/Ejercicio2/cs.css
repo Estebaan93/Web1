@@ -1,0 +1,16 @@
+body{
+    background-image: url("../../../Practica HTML/src/3790180.jpg");
+    background-size: 100%;
+    color: white;
+}
+
+.img3, .img2{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.img3{
+    margin-bottom: 10px;
+    /*border-bottom: 2px double white;
+    padding-bottom: 10px;*/
+}

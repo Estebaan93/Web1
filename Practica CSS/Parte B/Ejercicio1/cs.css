@@ -2,7 +2,20 @@ body{
     background-image: url("../../../Practica HTML/src/pexels-jayson-hinrichsen-12635428.jpg");
     background-size: 34%;
 }
+
 h4{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+b{
+    text-transform: uppercase;
+}
+
+.mayor{
+    font-size: 80%;
+}
+
+.menor{
+    font-size: 40%;
 }
