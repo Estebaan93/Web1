@@ -1,0 +1,47 @@
+body{
+    background-image: url("../../Practica HTML/src/pexels-viktoriia-kondratiuk-17573843.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+    font-size: medium;
+}
+
+form{
+    left: 30%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-size: large;
+    padding: 20px;
+    top: 60%;
+    /*width: 30%;*/
+}
+
+input{
+    border: 1px solid rgb(184, 184, 184);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    margin-bottom: 15px;
+    /*width: 90%;*/
+    font-size: large;
+}
+textarea{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    
+}
+
+#Nombre, #Mensaje, #Email{
+    color: white;
+}
+
+.Error{
+    color: red;
+    font-size: large;
+    display: none;
+}
+
+
