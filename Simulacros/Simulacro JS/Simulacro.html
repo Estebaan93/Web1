@@ -39,12 +39,14 @@
     </header>
     <main>
         <div>
-        <form action="">
-            <lab for="Nombre"><input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><p class="Error" id="ErrorNombre">NOMBRE INVALIDO</p></lab><br>
-            <lab for="Email"><input type="text" name="Email" id="Email" placeholder="Email"> <p class="Error" id="ErrorEmail">EMAIL INVALIDO</p></lab><br>
+        <form id="Formulario" action="">
+            <lab for="Nombre"><input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><p class="Error" id="ErrorNombre">NOMBRE INVALIDO</p><br></lab>
+            <lab for="Email"><input type="text" name="Email" id="Email" placeholder="Email"><p class="Error" id="ErrorEmail">EMAIL INVALIDO</p><br></lab>
             <lab for="Mensaje"><textarea name="Mensaje" id="Mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea><p class="Error" id="ErrorMensaje">DEBE LLENAR EL MENSAJE</p></lab><br>
-            
+             <button type="submit" value="submit">Enviar</button>
+             <!--onsubmit="return validar()"-->
         </form>
+        <div id="RegistroOk" class="EnvioOK">REGISTROS ACA!</div>
     </div>
     </main>
 
