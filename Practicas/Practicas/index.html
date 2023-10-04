@@ -39,10 +39,10 @@
     </header>
     <main>
         <div>
-        <form id="Formulario" action="">
-            <lab for="Nombre"><input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><p class="Error" id="ErrorNombre">NOMBRE INVALIDO</p><br></lab>
-            <lab for="Email"><input type="text" name="Email" id="Email" placeholder="Email"><p class="Error" id="ErrorEmail">EMAIL INVALIDO</p><br></lab>
-            <lab for="Mensaje"><textarea name="Mensaje" id="Mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea><p class="Error" id="ErrorMensaje">DEBE LLENAR EL MENSAJE</p></lab><br>
+        <form id="Formulario" onsubmit="return validar()">
+            <label for="Nombre"><input type="text" id="nombre" name="nombre" placeholder="Nombre"><span class="Error" id="errorNombre"></span><br></label>
+            <label for="Email"><input type="text" name="email" id="email" placeholder="Email"><span class="Error" id="errorEmail"></span><br></label>
+            <label for="Mensaje"><textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea><span class="Error" id="errorMensaje"></span></label><br>
              <button type="submit" value="submit">Enviar</button>
              <!--onsubmit="return validar()"-->
         </form>
