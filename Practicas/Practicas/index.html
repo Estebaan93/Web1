@@ -38,11 +38,11 @@
         </h4>
     </header>
     <main>
-        <div>
+        <div class="DivFor">
         <form id="Formulario" onsubmit="return validar()">
-            <label for="Nombre"><input type="text" id="nombre" name="nombre" placeholder="Nombre"><span class="errorInact" id="errorNombre"></span><br></label>
-            <label for="Email"><input type="text" name="email" id="email" placeholder="Email"><span class="errorInact" id="errorEmail"></span><br></label>
-            <label for="Mensaje"><textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea><span class="errorInact" id="errorMensaje"></span></label><br>
+            <label for="Nombre" class="label"><input type="text" id="nombre" name="nombre" placeholder="Nombre"><span class="errorInact" id="errorNombre"></span></label>
+            <label for="Email" class="label"><input type="text" name="email" id="email" placeholder="Email"><span class="errorInact" id="errorEmail"></span></label>
+            <label for="Mensaje" class="label"><textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea><span class="errorInact" id="errorMensaje"></span></label>
              <button type="submit" value="submit">Enviar</button>
              <!--onsubmit="return validar()"-->
         </form>

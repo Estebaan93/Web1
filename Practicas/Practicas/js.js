@@ -1,6 +1,7 @@
 /*VALIDAMOS FORMULARIO*/
 const nombreReg=/^[a-zA-ZÀ-ÿ\s]{1,40}$/;
 const correoReg=/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
+let campo_input=null;   //focus
 
 let nombre=document.getElementById("nombre");
 let email=document.getElementById("email");
@@ -29,9 +30,9 @@ function validar(){
     if(nombre.value=="" || !nombreReg.test(nombre.value)){
         errorNombre.textContent="El nombre es invalido";
         /*nombre.style.border="1px solid #FF0000";*/
+        nombre.focus();
         errorNombre.classList.remove('errorInact');
         errorNombre.classList.add('errorAct');
-
         return false;
      }
 
@@ -41,6 +42,7 @@ function validar(){
         /*msj.style.border="1px solid #FF0000";*/
         errorMsj.classList.remove('errorInact');
         errorMsj.classList.add('errorAct');
+        campo_input=msj;
         return false;
      } else if (msj.value.length>200){
         errorMsj.textContent="El mensaje no puede superar los 200 caracteres";
@@ -49,12 +51,15 @@ function validar(){
      }
 
      //Validad email opcional si se ingresa
-     if(email.value.trim()!=="" && !correoReg.test(email.value)){
+     let emailValue=email.value.trim();
+     if(emailValue !=="" && !correoReg.test(email.value)){
         errorEmail.textContent="El email no es valido";
+       /* errorEmail.classList.remove('errorIncativ');
+        errorEmail.classList.add('errorAct');*/
         email.style.border="1px solid #FF0000";
+        
         return false;
      }
-
      //Mensajes
      let registro=document.getElementById("RegistroOk");
      let msjNuevo=document.createElement("p");
@@ -76,10 +81,12 @@ function validar(){
      email.style.border="1px solid #ccc";
 
      //Hacemos focus al primer input
-     nombre.focus();
+     //nombre.focus();
      return false;
 
+
 }
+nombre.focus();
 
 window.onload=function(){
     let nombre=document.getElementById("nombre");
