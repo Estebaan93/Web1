@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simulacro JS</title>
+        <link rel="stylesheet" href="cs.css">
+    </head>
+
+    <body>
+        <header>
+            <h4>
+                <p> 1. Crear un formulario con: <br>
+                    * Nombre (obligatorio) <br>
+                    * Mensaje (obligatorio, máximo 200 caracteres) <br>
+                    * Email (opcional, pero válido si lo ingresa) <br>
+                    2. Dar estilo particular al formulario <br>
+                    3. Validar campos <br>
+                    4. Mostrar lista con errores creando elementos del DOM <br>
+                    5. Cambiar estilo a campos con errores <br>
+                    6. Al enviar, si los datos está bien, agregar mensaje a una lista de mensajes, con el siguiente formato: <br>
+                    Si proveyó el email, <br>
+                    “nombre dice mensaje. Contacto: email.”
+                    Si no, “nombre dice mensaje.” <br>
+                    7. Limpiar los campos, errores de validación y cambios de estilo <br>
+                    8. Hacer foco en el primer input al iniciar el documento y luego de cada envío correcto <br>
+
+                    NOTA: en el formulario, conviene usar el evento "onsubmit" para llamar a la función
+                    que hace la validación. A los efectos del práctico, la función de validación siempre
+                    debe devolver false, así el formulario no se envía. En el onsubmit, hacer de esta
+                    manera: <br>
+
+                    form onsubmit="return validar()" <br>
+
+                    Es decir, haciendo return de la función para validar que haya definido.
+                </p>
+            </h4>
+        </header>
+        <main>
+            <div class="DivFor">
+            <form id="Formulario" onsubmit="return validar()">
+                <label for="Nombre" class="label"><input type="text" id="nombre" name="nombre" placeholder="Nombre"><span class="errorInact" id="errorNombre"></span></label>
+                <label for="Email" class="label"><input type="text" name="email" id="email" placeholder="Email"><span class="errorInact" id="errorEmail"></span></label>
+                <label for="Mensaje" class="label"><textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea><span class="errorInact" id="errorMensaje"></span></label>
+                <button type="submit" value="submit">Enviar</button>
+                <!--onsubmit="return validar()"-->
+            </form>
+            <div id="RegistroOk" class="EnvioOK">REGISTROS ACA!</div>
+        </div>
+        </main>
+
+
+
+
+        <script src="js.js"></script>
+    </body>
+
+    </html>
