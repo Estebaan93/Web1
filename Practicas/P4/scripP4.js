@@ -27,6 +27,8 @@ function validar(e){
     errorCor.textContent="";
     errorTel.textContent="";
     errorDir.textContent="";
+
+    
     let apellidoValue=apellido.value.trim();
     let nombreValue=nombre.value.trim();
     let correoValue=correo.value.trim();
@@ -87,7 +89,7 @@ function validar(e){
         //Mensajes
      let registro=document.getElementById("Registro");
      let msjNuevo=document.createElement("p");
-     let msjFinal="Se registro: " + apellidoValue +" "+ nombreValue +" "+ correoValue +" "+ telefonoValue +" "+direccionValue +" Districto: "+provincia.value;
+     let msjFinal="Se registro: " + apellidoValue +" "+ nombreValue +" "+ correoValue +" Districto: "+provincia.value;
      msjNuevo.textContent=msjFinal;
      registro.appendChild(msjNuevo);
 
