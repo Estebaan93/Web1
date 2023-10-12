@@ -12,13 +12,12 @@ background-size: 50%;
     background-color: rgb(0, 0, 0, .1);
 }
 
-.errorActi{
+.errorAct{
     color: rgb(243, 3, 3);
     font-size: 12px;
+    display: block;
 }
-.errorInact{
-display: none;
-}
+
 
 
 #form{
@@ -42,16 +41,20 @@ form{
 #styleFor{
     padding-bottom: 30px;
 }
-#buttonFor > a{
+/*#buttonFor > a{
     color: black;
     font: 700 12px / 18px Roboto, Helvetica, Arial, Verdana, sans-serif;
     text-transform: uppercase;
     padding: 7px 12px 7px 12px;
-    display: flex;
-}
+    displa*/
 #buttonFor{
     border-radius: 8px;
 }
-.Registro{
+#Registro{
     color: white;
+}
+#provincia{
+    color: white;
+    background-color: rgb(15, 15, 15, .7);
+    width: 75%;
 }
