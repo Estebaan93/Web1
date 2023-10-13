@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h4>
+            Crear un formulario con: <br>
+            Nombre (obligatorio, máximo 9 de longitud) <br>
+            Temperatura preferida (número, obligatorio, mínimo -10, máximo 60)<br>
+            Teléfono (opcional, en caso de ser provisto deben ser todos números, no arrancar en cero y longitud igual a 10)<br>
+            Dar estilo particular al formulario<br>
+            Validar campos mediante javascript<br>
+            Mostrar errores creando elementos del DOM<br>
+            Cambiar estilo a campos con errores<br>
+            Al enviar, si los datos están bien, agregar mensaje a una lista de mensajes, con el siguiente formato:<br>
+            Si proveyó el teléfono,
+            “Hola <nombre>, te llamaremos al <telefono> cuando hagan <temparatura> grados”
+                Sí no,
+                “Hola <nombre>, nos vemos cuando hagan <temparatura> grados”<br>
+                    Luego de enviar correctamente, limpiar todos los campos del formulario, errores de validación y cambios de estilo.<br>
+                    NOTA: en el formulario, conviene usar el evento "onsubmit" para llamar a la función que hace la validación. A los efectos
+                     del práctico, la función de validación siempre debe devolver false, así el formulario no se envía. En el onsubmit, hacer de esta manera:<br>
+
+             <!-- <form onsubmit="return validar()"> -->
+
+                Es decir, haciendo return de la función para validar que haya definido.<br>
+        </h4>
+    </header>
+    <main>
+        <div class="divFormulario">
+            <form id="formulario" onsubmit="return validar()"></form>
+            <label for="nombre" class="label"><input type="text" id="nombre" placeholder="Nombre" class="label"><span id="errorN"></span></label>
+            <label for="temperatura" class="label"><input type="text" id="temperatura" placeholder="Temperatura" class="label"><span id="errorTemp"></span></label>
+            <label for="telefono" class="label"><input type="text" id="telefono" placeholder="Teléfono" class="label"><span id="errorTelefono"></span></label>
+            <input type="submit" value="Enviar">
+        </div>
+    </main>
+
+
+    <script src="scrip.js"></script>
+</body>
+</html>
