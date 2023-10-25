@@ -1,0 +1,77 @@
+body{
+    background-image: url("src/96553107_m.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(15, 15, 15, .7);
+    padding: 25px;
+    display: flex;
+    border-radius: 10px;
+}
+
+header>section>nav>ul{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.lista{
+    color: white;
+    padding-right: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+main>div>h1{
+    color: white;
+    font-size: 55px;
+    padding-left: 100px;
+}
+
+main>div>p{
+    color: rgb(212, 208, 208);
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main>div>button{
+    background-color: rgb(211, 209, 102);
+    margin-left: 100px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+main>div{
+    width: 700px;
+    padding-top: 100px;
+    padding-bottom: 20%;
+}
+
+article{
+    padding-top: 10%;
+    padding-left: 100px;
+}
+
+article>div{
+    width: 500px;
+}
+
+article>div>p,article>div>h4{
+    color: white;
+}
+
+article>div>span{
+    width: 100px;
+    padding: 5px;
+    background-color:azure;
+    border-radius: 3px;
+    
+}
+
+footer{
+    
+    text-align: center;
+    color: aliceblue;
+}

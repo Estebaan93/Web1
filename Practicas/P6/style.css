@@ -31,3 +31,8 @@ form{
 label{
     display: block;
 }
+.error{
+    color: rgb(243, 3, 3);
+    font-size: 12px;
+    display: block;
+}
