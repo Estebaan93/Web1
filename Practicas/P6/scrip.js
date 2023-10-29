@@ -30,12 +30,49 @@ function validar(){
         nombre.style.border="1px solid #FF0000";
         errores=true;
     }
+    if(temperatura.value==""){
+        errorTemp.textContent="Error de temperatura";
+        temperatura.style.border="1px solid #FF0000";
+        errorTemp.classList.add('error');
+        errores=true;
+
+    }
+    if(telefono.value=="" || !regTel.test(telefono.value)){
+        errorTel.textContent="El telefono es invalido";
+        nombre.style.border="1px solid #FF0000";
+        errorTel.classList.add('error');
+        errores=true;
+    }
 
     if(errores){
         return false
     }else{
         //Mensajes
+        let registro=document.getElementById("Registro");
+        let nuevoMsj=document.createElement("p");
+        let msjFinal=nombre.value.trim()+" - temperatura: "+ temperatura.value.trim() + " - Celular: "+ telefono.value.trim();
+        nuevoMsj.textContent=msjFinal;
+        registro.appendChild(nuevoMsj);
 
+
+        //Limpiamos stylos
+        nombre.style.border="1px solid #ccc";
+        temperatura.style.border="1px solid #ccc";
+        telefono.style.border="1px solid #ccc";
     }
+
+    //Eventos
+    //let for=document.getElementById('formulario');
+
+    //Limpiamos campos
+    nombre.value="",
+    temperatura.value="";
+    telefono.value="";
+
+    //Hacemos focus primer input
+    nombre.focus();
+   //// for.reset();
+    return false;
     
 }
+
