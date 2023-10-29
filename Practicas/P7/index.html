@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro JS</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+    <header>
+        <h4>Ejercicio a desarrollar. Entregar sitio web en forma adjunta.
+
+            Crear un formulario que permita cargar reseñas de películas con los siguientes datos:
+            Película (obligatorio, máximo 30 caracteres)
+            Puntuación (obligatorio, solo se puede puntuar con 1, 2, 3, 4 o 5)
+            Comentario (opcional, pero si la escribe el mínimo es 10 caracteres y el máximo es 200 caracteres)
+            Dar estilo particular al formulario.
+            Validar campos usando javascript.
+            Mostrar errores de validación manipulando el DOM.
+            Cambiar estilo a campos con errores de validación.
+            Al enviar, si los datos está bien hacer lo siguiente:
+            Mostrar los datos ingresados con el formato que desee. Cada reseña debe distinguirse.
+            Limpiar el formulario.
+            Hacer foco en el input de la película.</h4>
+    </header>
+    <main>
+        <div>
+            <form id="formulario" onsubmit="return validar()">
+                <p>RESEÑAS</p>
+                <label for="pelicula" ><input type="text" id="pelicula" placeholder="Pelicula" ><span id="errorP"></span></label>
+                <label for="puntuacion" ><input type="text" id="puntuacion" placeholder="Puntuacion (1 A 5)" ><span id="errorPuntu"></span></label>
+                <label for="comentario" ><textarea name="comentario" id="comentario" placeholder="Comentario (opcional)" cols="40" rows="7"></textarea><span id="errorComen"></span></label>
+                <button type="submit" value="submit">Puntuación</button>
+            </form>
+        </div>
+        <div style="color: red; padding-top: 100px;">RESEÑAS ACA</div>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
