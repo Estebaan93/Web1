@@ -92,15 +92,18 @@ p {
 }*/
 .div2interno2h1{
     padding-top: 50px;
-    padding-left: 20%;
-    padding-right: 10%;
+    padding-left: 20px;
+    padding-right: 10px;
     height: 50%;
 }
+.div4interno2h1{
+    padding-top: 50px;
+}
+
 .div2interno2h1>h1{
    font: 50px/50px DIN_Bold,Arial,Verdana,sans-serif;
 }
 .div2interno2h1>p, .div4interno2h1>p{
-    padding-top: 30px;
     font: 16px/22px DIN_Regular,Arial,Verdana,sans-serif;
     color: darkgray;
     text-align: justify;
