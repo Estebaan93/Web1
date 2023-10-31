@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen practico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <h4>Ejercicio a desarrollar. Adjuntar el o los archivos que correspondan a la solución. Puede ser un un solo archivo con todo o también un zip/rar con varios archivos comprimidos.</h2>
+            <h4>Crear un formulario que permita cargar los siguientes datos:</h4>
+            <p>Nombre (obligatorio, máximo 30 caracteres)</p>
+            <p>Email (opcional, máximo 20 caracteres y debe contener un @)</p>
+            <p>Edad (obligatorio, sólo números, debe ser mayor o igual a 18 y menor a 100)</p>
+            <p>Mensaje (obligatorio, máximo 200 caracteres)</p>
+            <h4>Dar estilo particular al formulario.</h4>
+            <h4> Validar campos usando javascript.</h4>
+            <h4>Mostrar errores de validación manipulando el DOM.</h4>
+            <h4>Cambiar estilo a campos con errores de validación.</h4>
+            <h4>Al enviar, si los datos está bien hacer lo siguiente:</h4>
+            <p>Crear elementos para mostrar los datos ingresados.</p>
+            <p>Ocultar el formulario.</p>
+            <p>Mostrar un cartel que diga “Mensaje enviado” (no usar alert)</p>           
+    </header>
+    <main>
+        <div>
+            <form id="formulario" onsubmit="return validar()">
+                <label for="nombre"><input type="text" id="nombre" placeholder="Nombre"><span id="errorNombre"></span></label>
+                <label for="email"><input type="text" id="email" placeholder="Email"><span id="errorEmail"></span></label>
+                <label for="edad"><input type="number" id="edad" placeholder="Edad"><span id="errorEdad"></span></label>
+                <label for="mensaje" ><textarea name="mensaje" id="mensaje" placeholder="Mensaje (Max 200 caracteres)" cols="40" rows="7"></textarea><span id="errorMensaje"></span></label>
+                <button type="submit" value="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="registro" style="color: red; padding-top: 3%;">REGISTROS ACA</div>  
+        <div id="enviado" style="display: none; padding-top: 5px;" >MENSAJE ENVIADO</div>    
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
