@@ -9,5 +9,6 @@ hemos vivido hasta el momento.*/
 let nombre, edad;
 nombre=prompt("Ingrese su nombre");
 edad=prompt("Ingrese su edad");
+console.log(nombre);
 birthYear= 2023 - edad; 
 document.write(nombre+" usted nacio en "+birthYear);
